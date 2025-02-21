@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Cadastros</title>
+</head>
+<body>
+    <h1>Lista de Cadastros</h1>
+    <ul>
+        {% for cadastro in cadastros %}
+            <li><strong>{{ cadastro.nome }}</strong> - {{ cadastro.senha }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2><a href="/">Voltar ao Cadastro</a></h2>
+</body>
+</html>

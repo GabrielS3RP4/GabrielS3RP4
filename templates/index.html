@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form action="/cadastrar" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><br>
+        
+        <label for="confirmar_senha">Confirmar Senha:</label>
+        <input type="password" id="confirmar_senha" name="confirmar_senha" required><br><br>
+        
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <h2><a href="/login">Já tem conta? Faça login aqui.</a></h2>
+</body>
+</html>
